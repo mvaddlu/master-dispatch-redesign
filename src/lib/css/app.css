@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    transition: all .555s ease;
+    box-sizing: border-box;
+}
+
+input {
+    outline: none
+}
