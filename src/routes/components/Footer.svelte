@@ -47,7 +47,7 @@
     </div>
 
     <span class="footer_rights">
-        © 2023 Dispatch Buddy, All rights reserved
+        Copyright © 2023. MasterDispatch
     </span>
 
     

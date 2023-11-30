@@ -10,12 +10,11 @@
     import MaskGroupImage from '$lib/images/icons/Mask group.svg';
     import CopyImage from '$lib/images/icons/copy-01.svg';
     import UnhappyImage from '$lib/images/icons/unhappy.svg';
-    import ChromeImage from '$lib/images/media/chrome.svg';
     import PreviewImage from '$lib/images/preview/Image.png';
     import Preview8Image from '$lib/images/preview/image 8.png';
+    import Preview2Image from '$lib/images/preview/image2.png'
     import Preview8_1Image from '$lib/images/preview/image 8(1).png';
     import Preview9Image from '$lib/images/preview/image 9.png';
-    import Preview10Image from '$lib/images/preview/image 10.png';
     import gif1 from '$lib/images/preview/gif1.gif'
     import Header from './components/Header.svelte';
     import Footer from './components/Footer.svelte';
@@ -34,22 +33,17 @@
             </span>
 
             <h1 class="title">
-                The Fastest Way to Book <span class="primary-color">More Loads</span>
+                The fastest way to obtain more cargo reservations.
             </h1>
 
             <p>
-                Email to brokers, calculate RPM, open Google Maps, and report Unreliable brokers with Dispatch Buddy
+                Send an email to brokers, calculate Revenue Per Mile (RPM), open Google Maps, and report unreliable brokers using Master Dispatch.
             </p>
 
             <div class="action_buttons">
-                <a rel="external" href="{ PUBLIC_BASE_URL }/#pricing" class="action_button">
-                    <img src="{ CircleArrowDownLeftImage }" alt="#">
-                    Get Started
-                </a>
-
-                <a rel="external" href="https://chrome.google.com/webstore/detail/dispatch-buddy/cecdeddepbioldoadbpgddhkgmfdcmmk" class="action_button">
-                    <img src="{ ChromeImage }" alt="#">
-                    View on web store
+                <a rel="external" href="{ PUBLIC_BASE_URL }/#pricing" class="shadow_btn" style="margin: 0">
+                    <img src="{ CircleArrowDownLeftImage }" alt="#" style="margin-right: 10px">
+                    Start Free
                 </a>
             </div>
         </div>
@@ -58,7 +52,7 @@
     </div>
 
     <h3>
-        Dispatch Buddy works with the largest load boards
+        Master Dispatch works with the largest load boards
     </h3>
 
     <div class="company_logos">
@@ -75,7 +69,7 @@
         <div class="preview" id="feature1">
             <img src="{ PreviewImage }" alt="#">
 
-<!--            <div class="shadow min right"></div>-->
+            <div class="shadow min right"></div>
         </div>
 
         <div class="info">
@@ -85,11 +79,11 @@
             </span>
 
             <h1 class="title">
-                Email brokers with a click
+                Send emails to brokers with a single click.
             </h1>
 
             <p>
-                Create custom templates with dynamic variables and send personalized emails to brokers at scale
+                Generate customized templates with dynamic variables and distribute individualized emails to brokers on a large scale.
             </p>
 
             <div class="additional_marks">
@@ -112,18 +106,18 @@
             </span>
 
             <h1 class="title">
-                Calculate RPM automatically
+                Automatically compute Revenue Per Mile (RPM).
             </h1>
 
             <p>
-                Break down the rate per mile for any load and easily filter out the highest paying ones directly on the load board
+                Analyze and break down the rate per mile for any load, and effortlessly filter out the most lucrative ones directly on the load board.
             </p>
         </div>
 
         <div class="preview">
-            <img src="{ Preview10Image }" alt="#">
+            <img src="{ Preview2Image }" alt="#" height="300">
 
-<!--            <div class="shadow min right"></div>-->
+            <div class="shadow min right"></div>
         </div>
     </div>
     <div class="feature">
@@ -140,29 +134,25 @@
             </span>
 
             <h1 class="title">
-                Google Maps with load details
+                Integrate load details with Google Maps.
             </h1>
 
             <p>
-                Instantly view the load route on Google Maps and access all the necessary load details
+                Instantly view the shipping route on Google Maps and access all vital information about the shipment, such as:
             </p>
 
             <div class="additional_marks">
                 <div class="mark">
                     <img src="{ CheckMarkCircleImage }" alt="#">
-                    Truck location
+                    The current location of the truck.
                 </div>
                 <div class="mark">
                     <img src="{ CheckMarkCircleImage }" alt="#">
-                    Pickup origin
+                    The final delivery location.
                 </div>
                 <div class="mark">
                     <img src="{ CheckMarkCircleImage }" alt="#">
-                    Delivery destination
-                </div>
-                <div class="mark">
-                    <img src="{ CheckMarkCircleImage }" alt="#">
-                    Tool information
+                    Information regarding the tools or equipment utilized.
                 </div>
             </div>
         </div>
@@ -176,7 +166,7 @@
     </div>
 
     <h1>
-        Book loads like a pro with <span class="primary-color">one click!</span>
+        Effortlessly reserve loads with a single click
     </h1>
 
     <div class="pros_list">
@@ -190,7 +180,7 @@
             </h3>
 
             <p>
-                You can book more loads for your trucks in the first month of use
+                You can secure additional load bookings for your trucks during the initial month of usage.
             </p>
         </div>
         <div class="pros">
@@ -199,11 +189,11 @@
             </span>
 
             <h3>
-                500 users
+                5000 users
             </h3>
 
             <p>
-                Signed up and been using our extension every day in just a few months
+                Registered and have been using our extension daily in just a few months.
             </p>
         </div>
         <div class="pros">
@@ -229,8 +219,8 @@
             </h2>
         </div>
 
-        <a href="#product" class="action_button">
-            <img src="{ PlaySquareImage }" alt="#">
+        <a href="#product" class="shadow_btn">
+            <img src="{ PlaySquareImage }" alt="#" style="margin-right: 10px">
             Watch a Tutorial
         </a>
     </div>
@@ -238,7 +228,7 @@
 
 <section class="pricing container" id="pricing">
     <h1>
-        Pricing plan
+        Cost-effective pricing.
     </h1>
 
     <p>
