@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #F86920;
+    --primary-color: #B4444A;
     --transparent-primary-color: #422516;
     --secondary-color: #141414;
     --background-color: #1A1A1A;
@@ -59,7 +59,7 @@
 
   .shadow {
     position: absolute;
-    bottom: 170px;
+    bottom: 100px;
     left: 150px;
     width: 0px;
     height: 0px;
@@ -88,12 +88,12 @@
   }
   
   .primary-color {
-    color: #F86920;
+    color: #B4444A;
   }
   
   .action_button {
     padding: 7px 15px;
-    background-color: #F86920;
+    background-color: #B4444A;
     border-radius: 7px;
     font-size: 16px;
     font-weight: 500;
@@ -145,10 +145,15 @@
     display: block;
   }
 
-  .header_logo {
+  .logo {
     font-size: 30px;
-    padding: 20px 20px 10px 20px;
     font-weight: bold;
+    color: #B4444A;
+  }
+
+  .logo_inner {
+    display: flex;
+    align-items: center;
   }
 
   .shadow_btn {
@@ -158,9 +163,9 @@
     font-weight: 500;
     font-size: 15px;
     border: 1px solid #4D4D4D;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: transparent;
-    transition: 0.2s;
+    transition: 0.3s;
     color: white;
     display: flex;
     align-items: center;
@@ -171,10 +176,8 @@
   }
 
   .shadow_btn:hover {
-    border: none;
-    color: white;
-    background-color: #D72319;
-    box-shadow: 5px 5px 50px 3px rgba(215, 35, 25);
+    background-color: #B4444A;
+    box-shadow: 2px 2px 20px 3px rgba(180, 68, 74);
   }
 
   header .additional_links {
@@ -336,19 +339,23 @@
   }
   .pricing .state_button .wrapper {
     display: inline-flex;
-    border: 2px solid #F86920;
+    border: 1px solid #4D4D4D;
     border-radius: 10px;
   }
   .pricing .state_button .billing_option {
-    color: #F86920;
-    padding: 10px 15px;
+    color: white;
+    padding: 15px 25px;
     border-radius: 5px;
     cursor: pointer;
   }
+
   .pricing .state_button .billing_option.active {
-    background-color: #F86920;
+    border: none;
     color: white;
+    background-color: #B4444A;
+    box-shadow: 2px 2px 15px 3px rgba(180, 68, 74);
   }
+
   .pricing .plans {
     display: flex;
     margin: 20px 0;
@@ -479,8 +486,8 @@
 .footer_btn:hover {
   border: none;
   color: white;
-  background-color: #D72319;
-  box-shadow: 5px 5px 50px 3px rgba(215, 35, 25);
+  background-color: #B4444A;
+  box-shadow: 2px 2px 20px 3px rgba(180, 68, 74);
 }
 
   footer .menu_links {

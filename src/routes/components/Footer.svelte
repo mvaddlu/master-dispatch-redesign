@@ -1,7 +1,8 @@
 <script>
     // import '../styles.css';
 
-    import LogoImage from '$lib/images/Logo.svg';
+    import MasterLogo from '$lib/images/globe.svg'
+
     import ArrowImage from '$lib/images/icons/Arrow.svg';
     import FacebookImage from '$lib/images/media/facebook-02.svg';
     import InstagramImage from '$lib/images/media/instagram.svg';
@@ -11,8 +12,10 @@
 </script>
 
 <footer class="container">
-    <img src="{ LogoImage }" alt="#">
-
+    <div class="logo_inner">
+        <img src={ MasterLogo } alt="" style=" margin-right: .75rem; margin-left: 1.5rem;">
+        <span class="logo">MasterDispatch</span>
+    </div>
     <div class="menu">
         <div class="menu_links main_links">
             <a rel="external" href="{ PUBLIC_BASE_URL }/#home" class="footer_btn">Home</a>

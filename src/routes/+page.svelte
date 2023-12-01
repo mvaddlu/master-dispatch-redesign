@@ -7,10 +7,9 @@
     import CursorMagicSelectionImage from '$lib/images/icons/cursor-magic-selection-02.svg';
     import BubbleChatQuestionImage from '$lib/images/icons/bubble-chat-question.svg';
     import PlaySquareImage from '$lib/images/icons/play-square.svg';
-    import MaskGroupImage from '$lib/images/icons/Mask group.svg';
     import CopyImage from '$lib/images/icons/copy-01.svg';
     import UnhappyImage from '$lib/images/icons/unhappy.svg';
-    import PreviewImage from '$lib/images/preview/Image.png';
+    import PreviewImage from '$lib/images/preview/image_2023-12-01_23-37-05.png';
     import Preview8Image from '$lib/images/preview/image 8.png';
     import Preview2Image from '$lib/images/preview/image2.png'
     import Preview8_1Image from '$lib/images/preview/image 8(1).png';
@@ -19,6 +18,8 @@
     import Header from './components/Header.svelte';
     import Footer from './components/Footer.svelte';
     import { PUBLIC_BASE_URL } from '$env/static/public';
+    import MasterLogo from '$lib/images/globe.svg'
+
 </script>
 
 
@@ -61,7 +62,7 @@
         <img src="{ Preview8_1Image }" alt="#">
     </div>
 
-<!--    <div class="shadow"></div>-->
+    <div class="shadow"></div>
 </section>
 
 <section class="features container" id="features">
@@ -122,7 +123,7 @@
     </div>
     <div class="feature">
         <div class="preview" id="feature2">
-            <img src="{ maps }" alt="#" height="300">
+            <img src="{ maps }" alt="#" height="320">
 
             <div class="shadow min left"></div>
         </div>
@@ -249,10 +250,10 @@
 
     <div class="plans">
         <div class="plan starter">
-            <img class="plan__image" src="{ MaskGroupImage }" alt="#">
+            <img class="plan__image" src="{ MasterLogo }" alt="#">
 
             <span class="plan__name">
-                Starter
+                Basic
             </span>
 
             <span class="plan__billing">
@@ -260,7 +261,7 @@
             </span>
 
             <span id="starter_yearly_sum" class="plan__yearly_sum">
-                or $10 mo
+                or $10 <span style="opacity: 0.5;">/per month</span>
             </span>
 
             <hr class="plan__dividing_line">
@@ -274,7 +275,11 @@
                     </li>
                     <li class="plan__includes_list__item">
                         <img src="{ CheckMarkCircleImage }" alt="#">
-                        Income/RPM Calculator
+                        1 User Account
+                    </li>
+                    <li class="plan__includes_list__item">
+                        <img src="{ CheckMarkCircleImage }" alt="#">
+                        RPM calculator
                     </li>
                     <li class="plan__includes_list__item">
                         <img src="{ CheckMarkCircleImage }" alt="#">
@@ -282,23 +287,27 @@
                     </li>
                     <li class="plan__includes_list__item">
                         <img src="{ CheckMarkCircleImage }" alt="#">
-                        Email Signature
+                        1 Email Template
+                    </li>
+                    <li class="plan__includes_list__item">
+                        <img src="{ CheckMarkCircleImage }" alt="#">
+                        Customer Support
                     </li>
                 </ul>
             </div>
 
             <a id="starter_paypal_link" rel="external" class="plan__get_started_button_wrapper" href="{ PUBLIC_BASE_URL }/paypal/96">
-                <div class="plan__get_started_button">
-                    <img class="plan__get_started_button__image" src="{ CircleArrowDownLeftImage }" alt="#">
+                <div class="shadow_btn" style="justify-content: center">
+                    <img class="plan__get_started_button__image" src="{ CircleArrowDownLeftImage }" alt="#" style="padding-right: 5px;">
                     Get Started
                 </div>
             </a>
         </div>
         <div class="plan pro">
-            <img class="plan__image" src="{ MaskGroupImage }" alt="#">
+            <img class="plan__image" src="{ MasterLogo }" alt="#">
 
             <span class="plan__name">
-                Dispatch PRO
+                Pro
             </span>
 
             <span class="plan__billing">
@@ -306,7 +315,7 @@
             </span>
 
             <span id="pro_yearly_sum" class="plan__yearly_sum">
-                or $25 mo
+                or $25 <span style="opacity: 0.5;">/per month</span>
             </span>
 
             <hr class="plan__dividing_line">
@@ -316,15 +325,19 @@
                 <ul class="plan__includes_list">
                     <li class="plan__includes_list__item">
                         <img src="{ CheckMarkCircleImage }" alt="#">
-                        Unlimited emails
+                        Everything in Starter, plus:
                     </li>
                     <li class="plan__includes_list__item">
                         <img src="{ CheckMarkCircleImage }" alt="#">
-                        Post Truck Filters
+                        Unlimited user accounts
                     </li>
                     <li class="plan__includes_list__item">
                         <img src="{ CheckMarkCircleImage }" alt="#">
-                        Income/RPM Calculator
+                        Unlimited Emails
+                    </li>
+                    <li class="plan__includes_list__item">
+                        <img src="{ CheckMarkCircleImage }" alt="#">
+                        Load Search Filters
                     </li>
                     <li class="plan__includes_list__item">
                         <img src="{ CheckMarkCircleImage }" alt="#">
@@ -332,35 +345,27 @@
                     </li>
                     <li class="plan__includes_list__item">
                         <img src="{ CheckMarkCircleImage }" alt="#">
-                        Gmail, Outlook, SMTP
+                        Multiple email address
                     </li>
                     <li class="plan__includes_list__item">
                         <img src="{ CheckMarkCircleImage }" alt="#">
-                        Unlimited Email Templates
-                    </li>
-                    <li class="plan__includes_list__item">
-                        <img src="{ CheckMarkCircleImage }" alt="#">
-                        Email Signature
-                    </li>
-                    <li class="plan__includes_list__item">
-                        <img src="{ CheckMarkCircleImage }" alt="#">
-                        DAT, Truckstop, DAT One
+                        DAT, Truckstop, DAT One, Truckersedge
                     </li>
                 </ul>
             </div>
 
             <a id="pro_paypal_link" rel="external" class="plan__get_started_button_wrapper" href="{ PUBLIC_BASE_URL }/paypal/240">
-                <div class="plan__get_started_button">
-                    <img class="plan__get_started_button__image" src="{ CircleArrowDownLeftImage }" alt="#">
+                <div class="shadow_btn" style="justify-content: center">
+                    <img class="plan__get_started_button__image" src="{ CircleArrowDownLeftImage }" alt="#" style="padding-right: 5px;">
                     Get Started
                 </div>
             </a>
         </div>
         <div class="plan free">
-            <img class="plan__image" src="{ MaskGroupImage }" alt="#">
+            <img class="plan__image" src="{ MasterLogo }" alt="#">
 
             <span class="plan__name">
-                Free Plan
+                Enterprice
             </span>
 
             <span class="plan__billing">
@@ -378,42 +383,34 @@
                 <ul class="plan__includes_list">
                     <li class="plan__includes_list__item">
                         <img src="{ CheckMarkCircleImage }" alt="#">
-                        100 emails
+                        Everything in Pro, plus:
                     </li>
                     <li class="plan__includes_list__item">
                         <img src="{ CheckMarkCircleImage }" alt="#">
-                        Post Truck Filters
+                        From 4 to Unlimited Users
                     </li>
                     <li class="plan__includes_list__item">
                         <img src="{ CheckMarkCircleImage }" alt="#">
-                        Income/RPM Calculator
+                        Multiple email addresses
                     </li>
                     <li class="plan__includes_list__item">
                         <img src="{ CheckMarkCircleImage }" alt="#">
-                        Google Maps
+                        Google Maps with Tolls & Load Info
                     </li>
                     <li class="plan__includes_list__item">
                         <img src="{ CheckMarkCircleImage }" alt="#">
-                        Gmail, Outlook, SMTP
-                    </li>
-                    <li class="plan__includes_list__item">
-                        <img src="{ CheckMarkCircleImage }" alt="#">
-                        Unlimited Email Templates
+                        Multiple Sending Addresses
                     </li>
                     <li class="plan__includes_list__item">
                         <img src="{ CheckMarkCircleImage }" alt="#">
                         Email Signature
                     </li>
-                    <li class="plan__includes_list__item">
-                        <img src="{ CheckMarkCircleImage }" alt="#">
-                        DAT, Truckstop, DAT One
-                    </li>
                 </ul>
             </div>
 
             <a id="free_paypal_link" rel="external" class="plan__get_started_button_wrapper" href="{ PUBLIC_BASE_URL }/paypal/0">
-                <div class="plan__get_started_button">
-                    <img class="plan__get_started_button__image" src="{ CircleArrowDownLeftImage }" alt="#">
+                <div class="shadow_btn" style="justify-content: center">
+                    <img class="plan__get_started_button__image" src="{ CircleArrowDownLeftImage }" alt="#" style="padding-right: 5px;">
                     Get Started
                 </div>
             </a>
@@ -434,15 +431,15 @@
     </p>
 
     <div class="question">
-        How to do I install Dispatch Buddy
+        How to do I install Master Dispatch?
 
         <div class="answer">
-            Installing Dispatch Buddy is very simple: subscribe to the service, install the extension, login in the extensio, use it. That's it!
+            Installing Master Dispatch is very simple: subscribe to the service, install the extension, login in the extensio, use it. That's it!
         </div>
     </div>
 
     <div class="question">
-        Is it safe to use my Gmail account with Dispatch Buddy
+        Is it safe to use my Gmail account with Master Dispatch?
 
         <div class="answer">
             Yes, it's completely safe. All user data stores locally on user machine, our program is just a translator between you and google api services.

@@ -3,6 +3,7 @@
 
     import MenuImage from '$lib/images/icons/Menu.svg';
     import { PUBLIC_BASE_URL } from '$env/static/public';
+    import MasterLogo from '$lib/images/globe.svg'
 </script>
 
 
@@ -10,9 +11,10 @@
     <div class="burger_menu_wrapper">
         <img class="burger_menu" id="burger_menu_image" src="{ MenuImage }" alt="#">
         <div>
-            <span class="header_logo">
-                MasterDispatch
-            </span>
+            <div class="logo_inner">
+                <img src={ MasterLogo } alt="" style="width: 45px; height: 45px; margin: 0 .75rem">
+                <span class="logo">MasterDispatch</span>
+            </div>
             <div class="links" id="header_links">
                 <a rel="external" href="{ PUBLIC_BASE_URL }/" class="shadow_btn">Home</a>
                 <a rel="external" href="{ PUBLIC_BASE_URL }/#features" class="shadow_btn">Features</a>
