@@ -21,13 +21,13 @@ export function load({ params }) {
     };
 
     switch (params.price) {
-        case "10":
+        case "35":
             return backendUrl; 
-        case "25":
+        case "50":
             return backendUrl;
-        case "96":
+        case "336":
             return backendUrl;
-        case "240":
+        case "480":
             return backendUrl;
         default:
             throw redirect(303, "/");

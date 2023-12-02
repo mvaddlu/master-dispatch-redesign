@@ -40,25 +40,25 @@ export function init() {
             }
     
             if (option.id === "monthly_billing") {
-                document.getElementById("starter_billing").innerText = "10";
-                document.getElementById("starter_paypal_link").href = "/paypal/10";
+                document.getElementById("starter_billing").innerText = "35";
+                document.getElementById("starter_paypal_link").href = "/paypal/35";
                 document.getElementById("starter_billing_period").innerText = "/mo";
-                document.getElementById("starter_yearly_sum").innerText = "or $96 yearly";
+                document.getElementById("starter_yearly_sum").innerText = "or $336 yearly";
                 
-                document.getElementById("pro_billing").innerText = "25";
-                document.getElementById("pro_paypal_link").href = "/paypal/25";
+                document.getElementById("pro_billing").innerText = "50";
+                document.getElementById("pro_paypal_link").href = "/paypal/50";
                 document.getElementById("pro_billing_period").innerText = "/mo";
-                document.getElementById("pro_yearly_sum").innerText = "or $240 yearly";
+                document.getElementById("pro_yearly_sum").innerText = "or $480 yearly";
             } else {
-                document.getElementById("starter_billing").innerText = "96";
-                document.getElementById("starter_paypal_link").href = "/paypal/96";
+                document.getElementById("starter_billing").innerText = "336";
+                document.getElementById("starter_paypal_link").href = "/paypal/336";
                 document.getElementById("starter_billing_period").innerText = "/yearly";
-                document.getElementById("starter_yearly_sum").innerText = "or $10 mo";
+                document.getElementById("starter_yearly_sum").innerText = "or $35 /per month";
                 
-                document.getElementById("pro_billing").innerText = "240";
-                document.getElementById("pro_paypal_link").href = "/paypal/240";
+                document.getElementById("pro_billing").innerText = "480";
+                document.getElementById("pro_paypal_link").href = "/paypal/480";
                 document.getElementById("pro_billing_period").innerText = "/yearly";
-                document.getElementById("pro_yearly_sum").innerText = "or $25 mo";
+                document.getElementById("pro_yearly_sum").innerText = "or $50 /per month";
     
             }
     

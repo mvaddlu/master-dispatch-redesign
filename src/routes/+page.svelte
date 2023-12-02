@@ -49,7 +49,7 @@
             </div>
         </div>
 
-        <img class="preview_image" src="{ gif1 }" alt="#">
+        <img class="preview_image" src="{ gif1 }" alt="#" height="350px">
     </div>
 
     <h3>
@@ -257,11 +257,11 @@
             </span>
 
             <span class="plan__billing">
-                $<span id="starter_billing">96</span><span id="starter_billing_period" class="plan__billing__period">/yearly</span>
+                $<span id="starter_billing">336</span><span id="starter_billing_period" class="plan__billing__period">/yearly</span>
             </span>
 
             <span id="starter_yearly_sum" class="plan__yearly_sum">
-                or $10 <span style="opacity: 0.5;">/per month</span>
+                or $35 /per month
             </span>
 
             <hr class="plan__dividing_line">
@@ -296,7 +296,7 @@
                 </ul>
             </div>
 
-            <a id="starter_paypal_link" rel="external" class="plan__get_started_button_wrapper" href="{ PUBLIC_BASE_URL }/paypal/96">
+            <a id="starter_paypal_link" rel="external" class="plan__get_started_button_wrapper" href="{ PUBLIC_BASE_URL }/paypal/336">
                 <div class="shadow_btn" style="justify-content: center">
                     <img class="plan__get_started_button__image" src="{ CircleArrowDownLeftImage }" alt="#" style="padding-right: 5px;">
                     Get Started
@@ -311,11 +311,11 @@
             </span>
 
             <span class="plan__billing">
-                $<span id="pro_billing">240</span><span id="pro_billing_period" class="plan__billing__period">/yearly</span>
+                $<span id="pro_billing">480</span><span id="pro_billing_period" class="plan__billing__period">/yearly</span>
             </span>
 
             <span id="pro_yearly_sum" class="plan__yearly_sum">
-                or $25 <span style="opacity: 0.5;">/per month</span>
+                or $50 /per month
             </span>
 
             <hr class="plan__dividing_line">
@@ -354,7 +354,7 @@
                 </ul>
             </div>
 
-            <a id="pro_paypal_link" rel="external" class="plan__get_started_button_wrapper" href="{ PUBLIC_BASE_URL }/paypal/240">
+            <a id="pro_paypal_link" rel="external" class="plan__get_started_button_wrapper" href="{ PUBLIC_BASE_URL }/paypal/480">
                 <div class="shadow_btn" style="justify-content: center">
                     <img class="plan__get_started_button__image" src="{ CircleArrowDownLeftImage }" alt="#" style="padding-right: 5px;">
                     Get Started

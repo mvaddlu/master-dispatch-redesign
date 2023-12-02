@@ -30,23 +30,24 @@
             <a href="{ PUBLIC_BASE_URL }/term" class="footer_btn">Terms of Condition</a>
         </div>
 
-        <div class="menu_links contact_links">
-            <p class="menu_item">info@dispatchbuddy.com</p>
-            <div class="socials menu_item">
-                <a href="#/">
-                    <img src="{ LinkedinImage }" alt="#">
-                </a>
-                <a href="#/">
-                    <img src="{ InstagramImage }" alt="#">
-                </a>
-                <a href="#/">
-                    <img src="{ FacebookImage }" alt="#">
-                </a>
-                <a href="#/">
-                    <img src="{ YoutubeImage }" alt="#">
-                </a>
-            </div>
+            <div class="menu_links contact_links">
+                <p class="menu_item">support@masterdispatch.com</p>
+                <div class="socials menu_item">
+                    <a href="#/">
+                        <img src="{ LinkedinImage }" alt="#">
+                    </a>
+                    <a href="#/">
+                        <img src="{ InstagramImage }" alt="#">
+                    </a>
+                    <a href="#/">
+                        <img src="{ FacebookImage }" alt="#">
+                    </a>
+                    <a href="#/">
+                        <img src="{ YoutubeImage }" alt="#">
+                    </a>
+                </div>
         </div>
+
     </div>
 
     <span class="footer_rights">

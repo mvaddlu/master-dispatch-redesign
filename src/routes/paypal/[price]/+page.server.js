@@ -7,13 +7,13 @@ export const actions = {
         let price = data.get("price");
         
         switch(price) {
-            case "10":
+            case "35":
                 throw redirect(303, "/starter");
-            case "25":
+            case "50":
                 throw redirect(303, "/pro");
-            case "96":
+            case "336":
                 throw redirect(303,'/starter')
-            case "240":
+            case "480":
                 throw redirect(303,'/pro')
             default:
                 throw redirect(303, "/");
