@@ -217,6 +217,7 @@
   #home .splitted_wrapper .main_info {
     max-width: 500px;
     text-align: left;
+    margin-right: 100px;
   }
   #home .splitted_wrapper .main_info .mark img {
     margin-right: 7px;
@@ -235,8 +236,8 @@
   }
   #home .splitted_wrapper .preview_image {
     margin: 40px auto;
-    border-radius: 40px;
-    padding: 30px;
+    border-radius: 50px;
+    padding: 20px;
   }
   #home h3 {
     font-size: 24px;
@@ -436,6 +437,25 @@
   .pricing .plans .plan__get_started_button__image {
     margin-right: 5px;
   }
+
+  .square_range {
+    width: 90%;
+    margin: 15px 0;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .square_input {
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    width: 40px;
+    text-align: center;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+  }
   
   .questions {
     margin: 75px auto;
@@ -532,6 +552,7 @@
     .container {
       margin: 0 40px;
     }
+
   }
   @media (max-width: 970px) {
     #burger_menu_image {

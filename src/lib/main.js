@@ -1,4 +1,5 @@
 // @ts-nocheck
+
 function click_hide_menu(event) {
     let burger_image = document.getElementById("burger_menu_image");
     let burger_links = document.getElementById("burger_menu_links");
@@ -10,6 +11,42 @@ function click_hide_menu(event) {
 }
 
 export function init() {
+    let squareInput = document.querySelector('#square-input');
+    let squareRange = document.querySelector('#square-range');
+    let inputs = document.querySelectorAll('input');
+    let radioType = document.querySelectorAll('input[name="type"]');
+
+    let oneStepPrice = 30;
+    let totalPriceElement = document.querySelector('#total-price');
+
+    squareRange.addEventListener('input', function(){
+        squareInput.value = squareRange.value
+    })
+
+    squareInput.addEventListener('input', function(){
+        squareRange.value = squareInput.value
+    })
+
+    function calculate(){
+        let totalPrice = oneStepPrice * parseInt(squareInput.value);
+
+        for(const radio of radioType){
+            if(radio.checked){
+                totalPrice = totalPrice * parseFloat(radio.value)
+            }
+        }
+
+        totalPriceElement.innerText = (totalPrice)
+    }
+    calculate();
+
+    for(const input of inputs) {
+        input.addEventListener('input', function(){
+            calculate();
+        })
+    }
+
+
     let questions = document.getElementsByClassName("question");
     
     for (let i = 0; i < questions.length; i++) {
@@ -81,3 +118,4 @@ export function init() {
         }
     })
 }
+

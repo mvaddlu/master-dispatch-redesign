@@ -20,8 +20,8 @@
     import { PUBLIC_BASE_URL } from '$env/static/public';
     import MasterLogo from '$lib/images/globe.svg'
 
-</script>
 
+</script>
 
 <Header />
 
@@ -369,11 +369,14 @@
             </span>
 
             <span class="plan__billing">
-                Free
+                $<span id="total-price">120</span>
             </span>
-
-            <span class="plan__yearly_sum">
-                &nbsp;
+            <span>
+                <div style="text-align: center;">
+                    <input class="square_range" type="range" id="square-range" min="4" max="21" value="4" step="1" />
+                    <span>User Account:</span>
+                    <input class="square_input" disabled type="number" min="4" max="21" value="4" id="square-input" />
+                </div>
             </span>
 
             <hr class="plan__dividing_line">
