@@ -367,9 +367,8 @@
             <span class="plan__name">
                 Enterprice
             </span>
-
             <span class="plan__billing">
-                $<span id="total-price">120</span>
+                $<span id="total-price">120</span><span style="font-size: 30px;">/mo</span>
             </span>
             <span>
                 <div style="text-align: center;">
@@ -378,7 +377,6 @@
                     <input class="square_input" disabled type="number" min="4" max="21" value="4" id="square-input" />
                 </div>
             </span>
-
             <hr class="plan__dividing_line">
 
             <div class="plan__includes_list__wrapper">
@@ -411,7 +409,7 @@
                 </ul>
             </div>
 
-            <a id="free_paypal_link" rel="external" class="plan__get_started_button_wrapper" href="{ PUBLIC_BASE_URL }/paypal/0">
+            <a id="enterprice_paypal_link" rel="external" class="plan__get_started_button_wrapper" href="{ PUBLIC_BASE_URL }/paypal/120">
                 <div class="shadow_btn" style="justify-content: center">
                     <img class="plan__get_started_button__image" src="{ CircleArrowDownLeftImage }" alt="#" style="padding-right: 5px;">
                     Get Started

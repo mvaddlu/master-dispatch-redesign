@@ -86,6 +86,7 @@ export function init() {
                 document.getElementById("pro_paypal_link").href = "/paypal/50";
                 document.getElementById("pro_billing_period").innerText = "/mo";
                 document.getElementById("pro_yearly_sum").innerText = "or $480 yearly";
+
             } else {
                 document.getElementById("starter_billing").innerText = "336";
                 document.getElementById("starter_paypal_link").href = "/paypal/336";
@@ -96,7 +97,6 @@ export function init() {
                 document.getElementById("pro_paypal_link").href = "/paypal/480";
                 document.getElementById("pro_billing_period").innerText = "/yearly";
                 document.getElementById("pro_yearly_sum").innerText = "or $50 /per month";
-    
             }
     
             option.classList.add("active");
