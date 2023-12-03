@@ -20,7 +20,6 @@
     import { PUBLIC_BASE_URL } from '$env/static/public';
     import MasterLogo from '$lib/images/globe.svg'
 
-
 </script>
 
 <Header />
@@ -368,12 +367,13 @@
                 Enterprice
             </span>
             <span class="plan__billing">
-                $<span id="total-price">120</span><span style="font-size: 30px;">/mo</span>
+                $<span id="total-price-monthly"></span><span id="total_billing_period_monthly" class="plan__billing__period">/yearly</span>
+                $<span id="total-price-yearly"></span><span id="total_billing_period_yearly">/yearly</span>
             </span>
             <span>
                 <div style="text-align: center;">
                     <input class="square_range" type="range" id="square-range" min="4" max="21" value="4" step="1" />
-                    <span>User Account:</span>
+                    <div>User Account:</div>
                     <input class="square_input" disabled type="number" min="4" max="21" value="4" id="square-input" />
                 </div>
             </span>

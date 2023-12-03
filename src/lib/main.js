@@ -1,5 +1,6 @@
 // @ts-nocheck
 
+
 function click_hide_menu(event) {
     let burger_image = document.getElementById("burger_menu_image");
     let burger_links = document.getElementById("burger_menu_links");
@@ -16,19 +17,18 @@ export function init() {
     let inputs = document.querySelectorAll('input');
     let radioType = document.querySelectorAll('input[name="type"]');
 
-    let oneStepPrice = 30;
-    let totalPriceElement = document.querySelector('#total-price');
+
+    let totalPriceMonthlyElement = document.querySelector('#total-price-monthly');
+    let totalPriceYearlyElement = document.querySelector('#total-price-yearly');
+
 
     squareRange.addEventListener('input', function(){
         squareInput.value = squareRange.value
     })
 
-    squareInput.addEventListener('input', function(){
-        squareRange.value = squareInput.value
-    })
 
     function calculate(){
-        let totalPrice = oneStepPrice * parseInt(squareInput.value);
+        let totalPrice = 35 * parseInt(squareInput.value);
 
         for(const radio of radioType){
             if(radio.checked){
@@ -36,13 +36,27 @@ export function init() {
             }
         }
 
-        totalPriceElement.innerText = (totalPrice)
+        totalPriceMonthlyElement.innerText = (totalPrice)
     }
-    calculate();
+    calculate()
+
+    function calculate2(){
+        let totalPrice = 335 * parseInt(squareInput.value);
+
+        for(const radio of radioType){
+            if(radio.checked){
+                totalPrice = totalPrice * parseFloat(radio.value)
+            }
+        }
+
+        totalPriceYearlyElement.innerText = (totalPrice)
+    }
+    calculate2();
 
     for(const input of inputs) {
         input.addEventListener('input', function(){
             calculate();
+            calculate2()
         })
     }
 
@@ -75,7 +89,7 @@ export function init() {
             for (let k = 0; k < billing_options.length; k++) {
                 billing_options[k].classList.remove("active");
             }
-    
+
             if (option.id === "monthly_billing") {
                 document.getElementById("starter_billing").innerText = "35";
                 document.getElementById("starter_paypal_link").href = "/paypal/35";
@@ -87,6 +101,9 @@ export function init() {
                 document.getElementById("pro_billing_period").innerText = "/mo";
                 document.getElementById("pro_yearly_sum").innerText = "or $480 yearly";
 
+                document.getElementById("total-price-monthly").innerText = totalPriceMonthlyElement.innerText;
+                document.getElementById("total_billing_period_monthly").innerText = "/mo";
+
             } else {
                 document.getElementById("starter_billing").innerText = "336";
                 document.getElementById("starter_paypal_link").href = "/paypal/336";
@@ -97,6 +114,9 @@ export function init() {
                 document.getElementById("pro_paypal_link").href = "/paypal/480";
                 document.getElementById("pro_billing_period").innerText = "/yearly";
                 document.getElementById("pro_yearly_sum").innerText = "or $50 /per month";
+
+                document.getElementById("total-price-yearly").innerText = totalPriceYearlyElement.innerText;
+                document.getElementById("total_billing_period_yearly").innerText = "/yearly";
             }
     
             option.classList.add("active");
