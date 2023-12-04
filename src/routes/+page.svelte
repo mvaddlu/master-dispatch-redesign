@@ -377,8 +377,7 @@
             <span>
                 <div style="text-align: center;">
                     <input class="square_range" type="range" id="square-range" min="4" max="21" value="4" step="1" />
-                    <div>User Account:</div>
-                    <input class="square_input" disabled type="number" min="4" max="21" value="4" id="square-input" />
+                    <div>User Account: <input class="square_input" disabled type="number" min="4" max="21" value="4" id="square-input" /></div>
                 </div>
             </span>
             <hr class="plan__dividing_line">
