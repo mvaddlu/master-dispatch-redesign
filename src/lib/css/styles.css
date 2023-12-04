@@ -9,6 +9,9 @@
     --background-block-color: #2E2E2E;
 }
 
+.display_none {
+  display: none;
+}
 
 .features .feature, header .additional_links, header {
     display: flex;

@@ -11,12 +11,13 @@ function click_hide_menu(event) {
     }
 }
 
+
+
 export function init() {
     let squareInput = document.querySelector('#square-input');
     let squareRange = document.querySelector('#square-range');
     let inputs = document.querySelectorAll('input');
     let radioType = document.querySelectorAll('input[name="type"]');
-
 
     let totalPriceMonthlyElement = document.querySelector('#total-price-monthly');
     let totalPriceYearlyElement = document.querySelector('#total-price-yearly');
@@ -90,6 +91,10 @@ export function init() {
                 billing_options[k].classList.remove("active");
             }
 
+            const periodYear = document.getElementById("total_billing_period_yearly")
+            const periodMon = document.getElementById("total_billing_period_monthly")
+
+
             if (option.id === "monthly_billing") {
                 document.getElementById("starter_billing").innerText = "35";
                 document.getElementById("starter_paypal_link").href = "/paypal/35";
@@ -103,6 +108,10 @@ export function init() {
 
                 document.getElementById("total-price-monthly").innerText = totalPriceMonthlyElement.innerText;
                 document.getElementById("total_billing_period_monthly").innerText = "/mo";
+                totalPriceYearlyElement.classList.add('display_none')
+                totalPriceMonthlyElement.classList.remove('display_none')
+                periodYear.classList.add('display_none')
+                periodMon.classList.remove('display_none')
 
             } else {
                 document.getElementById("starter_billing").innerText = "336";
@@ -117,6 +126,11 @@ export function init() {
 
                 document.getElementById("total-price-yearly").innerText = totalPriceYearlyElement.innerText;
                 document.getElementById("total_billing_period_yearly").innerText = "/yearly";
+                totalPriceMonthlyElement.classList.add('display_none')
+                totalPriceYearlyElement.classList.remove('display_none')
+                periodMon.classList.add('display_none')
+                periodYear.classList.remove('display_none')
+
             }
     
             option.classList.add("active");
