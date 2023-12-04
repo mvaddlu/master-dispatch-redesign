@@ -367,8 +367,12 @@
                 Enterprice
             </span>
             <span class="plan__billing" id="plan__billing">
-                <span id="total-price-monthly"></span><span id="total_billing_period_monthly" class="plan__billing__period"></span>
-                <span id="total-price-yearly"></span><span id="total_billing_period_yearly" class="plan__billing__period"></span>
+                <div class="display_none" id="monthlyBlock">
+                    <span id="monthlyDollar">$</span><span id="total-price-monthly"></span><span id="total_billing_period_monthly" class="plan__billing__period"></span>
+                </div>
+                <div>
+                    <span id="yearlyDollar">$</span><span id="total-price-yearly"></span><span id="total_billing_period_yearly" class="plan__billing__period">/yearly</span>
+                </div>
             </span>
             <span>
                 <div style="text-align: center;">

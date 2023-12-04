@@ -91,9 +91,11 @@ export function init() {
                 billing_options[k].classList.remove("active");
             }
 
-            const periodYear = document.getElementById("total_billing_period_yearly")
-            const periodMon = document.getElementById("total_billing_period_monthly")
-
+            const periodYearly = document.getElementById("total_billing_period_yearly")
+            const periodMonthly = document.getElementById("total_billing_period_monthly")
+            const monthlyDollar = document.getElementById("monthlyDollar")
+            const yearlyDollar = document.getElementById("yearlyDollar")
+            const monthlyBlock = document.getElementById("monthlyBlock")
 
             if (option.id === "monthly_billing") {
                 document.getElementById("starter_billing").innerText = "35";
@@ -110,8 +112,11 @@ export function init() {
                 document.getElementById("total_billing_period_monthly").innerText = "/mo";
                 totalPriceYearlyElement.classList.add('display_none')
                 totalPriceMonthlyElement.classList.remove('display_none')
-                periodYear.classList.add('display_none')
-                periodMon.classList.remove('display_none')
+                periodYearly.classList.add('display_none')
+                periodMonthly.classList.remove('display_none')
+                yearlyDollar.classList.add('display_none')
+                monthlyDollar.classList.remove('display_none')
+                monthlyBlock.classList.remove('display_none')
 
             } else {
                 document.getElementById("starter_billing").innerText = "336";
@@ -128,9 +133,10 @@ export function init() {
                 document.getElementById("total_billing_period_yearly").innerText = "/yearly";
                 totalPriceMonthlyElement.classList.add('display_none')
                 totalPriceYearlyElement.classList.remove('display_none')
-                periodMon.classList.add('display_none')
-                periodYear.classList.remove('display_none')
-
+                periodMonthly.classList.add('display_none')
+                periodYearly.classList.remove('display_none')
+                monthlyDollar.classList.add('display_none')
+                yearlyDollar.classList.remove('display_none')
             }
     
             option.classList.add("active");
